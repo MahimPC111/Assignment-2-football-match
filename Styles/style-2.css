@@ -1,0 +1,586 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+/* -----------------
+Google font Poppins
+----------------- */
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* -----------------
+Section styles
+------------------ */
+
+.Top-banner {
+    height: 550px;
+    background: #161616;
+    border-radius: 30px;
+    display: flex;
+}
+
+.width {
+    margin: 50px auto;
+    width: 1200px;
+}
+
+/* -----------------
+First Container styles
+------------------- */
+
+.container-1 {
+    width: 50%;
+    padding-top: 50px;
+    padding-left: 105px;
+    padding-right: 30px;
+}
+
+/* ----------------
+Heading styles
+------------------ */
+
+.headline {
+    font-style: normal;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 60px;
+    margin: 30px 0;
+}
+
+.quote {
+    color: #FFFFFF;
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+
+.live-watch {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background: #DD0000;
+    border-radius: 5px;
+}
+
+/*------------------
+ Animation style
+------------------ */
+
+.live-watch-2 {
+    position: relative;
+    left: -123px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500px;
+    padding: 10px 20px;
+    background: #DD0000;
+    border-radius: 5px;
+    z-index: 1;
+    animation: sliding 2.5s linear 0s infinite forwards;
+    animation-play-state: running;
+}
+
+@keyframes sliding {
+    from {
+        left: -123px;
+    }
+
+    to {
+        left: 800px;
+        opacity: 0;
+    }
+}
+
+/* -------------------
+Second Container styles
+------------------- */
+
+.container-2 {
+    width: 50%;
+}
+
+.player {
+    position: relative;
+    top: 46px;
+    width: 90%;
+    padding-left: 10px;
+}
+
+/* ---------------------
+Aside menu bar styles
+----------------------- */
+
+.menu {
+    float: left;
+    width: 300px;
+    height: 300px;
+    background: #161616;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* --------------
+Button styles 
+-----------------*/
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 15px 0;
+    border: 0;
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    background: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #161616;
+}
+
+.different-color {
+    background: #DD0000;
+    color: white;
+}
+
+/* -------------
+Matches styles
+---------------- */
+
+.upcoming-matches {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* ---------------
+   match styles
+----------------- */
+
+.match {
+    border-radius: 10px;
+    box-shadow: 0 0 0.5px 0.4px rgb(216, 198, 198);
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 25px;
+}
+
+.upcoming-matches .match .img {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 30px;
+}
+
+.upcoming-matches .match .img span {
+    font-weight: 900;
+    padding-top: 15px;
+}
+
+/* -----------------
+Country styles
+----------------- */
+
+.countries {
+    padding-top: 30px;
+}
+
+.countries h3 {
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    color: #161616;
+}
+
+.countries p {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #494747;
+}
+
+/* -----------------------
+Button only for tab view
+-------------------------- */
+
+.view-button {
+    display: none;
+}
+
+
+/* --------------
+Footer styles
+---------------- */
+
+.footer {
+    width: 1333px;
+    height: 444px;
+    margin: 40px auto 0 auto;
+    background: #161616;
+}
+
+.footer .goal {
+    text-align: center;
+    color: white;
+    padding-top: 120px;
+    padding-bottom: 40px;
+}
+
+/* --------------------
+Horizontal Line styles 
+-----------------------*/
+
+hr {
+    width: 1100px;
+    height: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* -----------------
+Options styles
+------------------- */
+
+.options {
+    text-align: center;
+    padding: 25px 0;
+}
+
+.options a {
+    text-decoration: none;
+    color: white;
+}
+
+.options span {
+    padding: 0 15px;
+    font-size: 14px;
+}
+
+/* --------------------
+Social link styles
+-------------------- */
+
+.social-links {
+    font-size: 45px;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.social-links a {
+    padding: 0 20px;
+}
+
+/* ------------------
+Responsive styles
+--------------------- */
+
+/* -------------
+mobile
+----------------- */
+
+@media screen and (max-width:599px) {
+    .width {
+        width: 100%;
+        margin: auto;
+    }
+
+    .Top-banner {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    .container-1 {
+        width: 100%;
+        margin-top: 25px;
+        padding: 10px 10px;
+        display: block;
+    }
+
+    .headline {
+        width: 230px;
+        margin: 0 auto;
+        font-size: 22px;
+        text-align: center;
+        padding-bottom: 15px;
+        font-weight: 500;
+    }
+
+    .quote {
+        margin: auto;
+        width: 80%;
+        text-align: center;
+        font-size: 12px;
+
+    }
+
+    .live-watch {
+        width: 105px;
+        display: block;
+        margin: 15px auto;
+    }
+
+    .live-watch-2 {
+        display: none;
+    }
+
+    .container-2 {
+        width: 50%;
+        height: fit-content;
+        margin: 0 auto;
+        position: relative;
+        bottom: 39px;
+        object-fit: cover;
+        object-position: bottom;
+    }
+
+    .menu {
+        float: inherit;
+        margin: 10px auto;
+        display: flex;
+        background: #FFFFFF;
+        /* flex-direction: column;
+        justify-content: center;
+        align-items: center; */
+    }
+
+    .button {
+        margin: 12px auto;
+        border: 0.5px solid #d8d6d6;
+        box-shadow: 0 0 1px rgba(202, 201, 201, 0.603);
+        width: auto;
+        height: 55px;
+        border-radius: 10px;
+        font-weight: 500;
+        font-size: 22px;
+        padding: 0 15px;
+    }
+
+    .different-color {
+        background: #DD0000;
+        color: white;
+    }
+
+    .blog-button {
+        width: 135px;
+    }
+
+    .upcoming-matches {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .match {
+        margin-left: 0;
+    }
+
+    .footer {
+        width: 100%;
+        height: 500px;
+        margin: 20px auto;
+    }
+
+    .footer .goal {
+        text-align: center;
+        color: white;
+        margin: 0 auto;
+        padding-top: 40px;
+        font-size: 22px;
+    }
+
+    .hr {
+        width: 80%;
+    }
+
+    .options {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .options span {
+        color: rgb(236, 231, 231);
+        margin: 10px auto;
+        font-size: 14px;
+        font-weight: 100;
+    }
+
+    .social-links {
+        font-size: 30px;
+        text-align: center;
+        padding: 0;
+    }
+}
+
+/* ------------------
+Tab Responsive
+------------------- */
+
+@media screen and (min-width:600px) and (max-width:899px) {
+    .width {
+        width: 100%;
+        margin: auto;
+    }
+
+    .Top-banner {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        margin-top: 15px;
+    }
+
+    .container-1 {
+        width: 50%;
+        margin-top: 25px;
+        padding: 10px 10px;
+        display: block;
+    }
+
+    .headline {
+        width: 230px;
+        margin: 0 55px;
+        font-size: 30px;
+        padding-bottom: 15px;
+        font-weight: 700;
+
+    }
+
+    .quote {
+        margin: 10px 55px;
+        width: 80%;
+        text-align: left;
+        font-size: 14px;
+        padding: 15px 0;
+    }
+
+    .live-watch {
+        width: 105px;
+        display: block;
+        margin: 30px 55px;
+    }
+
+    .live-watch-2 {
+        display: none;
+    }
+
+    .container-2 {
+        width: 50%;
+        height: auto;
+        margin: 0 auto;
+        flex-shrink: 0;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .player {
+        display: block;
+        bottom: -18px;
+        height: fit-content;
+        object-fit: cover;
+        object-position: bottom;
+    }
+
+    .menu {
+        float: inherit;
+        margin: 30px auto;
+        display: flex;
+        flex-direction: row;
+        background: #FFFFFF;
+        width: auto;
+        height: auto;
+    }
+
+    .button {
+        margin: 12px auto;
+        border: 0.5px solid #d8d6d6;
+        box-shadow: 0 0 1px rgba(202, 201, 201, 0.603);
+        width: auto;
+        height: 55px;
+        border-radius: 10px;
+        font-weight: 500;
+        font-size: 22px;
+        padding: 0 15px;
+    }
+
+    .different-color {
+        background: #DD0000;
+        color: white;
+    }
+
+    .blog-button {
+        width: 135px;
+    }
+
+    .upcoming-matches {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin: 0 15px;
+    }
+
+    .match {
+        margin-left: 0;
+    }
+
+    .view-button {
+        text-align: center;
+        display: block;
+    }
+
+    .view-button button {
+        margin: 15px auto;
+        border: 0;
+        width: 130px;
+        height: 50px;
+        border-radius: 10px;
+        font-weight: 500;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        padding: 10px 15px;
+        background: #DD0000;
+        color: white;
+    }
+
+    .footer {
+        width: 100%;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    .footer .goal {
+        text-align: center;
+        color: white;
+        margin: 0 auto;
+        padding-top: 40px;
+        font-size: 22px;
+    }
+
+    .hr {
+        width: 80%;
+    }
+
+    .options {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: stretch;
+    }
+
+    .options span {
+        color: rgb(236, 231, 231);
+        margin: 10px 0;
+        font-size: 14px;
+        font-weight: 100;
+    }
+
+    .social-links {
+        font-size: 30px;
+        text-align: center;
+        padding: 0;
+    }
+
+}
